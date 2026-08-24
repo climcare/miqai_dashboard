@@ -252,6 +252,173 @@ body.dark .scenario-limit strong{color:#9fc1f3}
   .scenario-hero h2{font-size:18px}
 }
 </style>
+
+<style id="miqai-rc17-impactos">
+.impact-hero{
+  background:linear-gradient(135deg,#f4f8ff,#fbfcff);
+  border:1px solid #d7e2f2;
+  border-radius:17px;
+  padding:17px 15px;
+  margin-bottom:14px;
+}
+.impact-kicker{
+  color:#2453a6;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.7px;
+  margin-bottom:7px;
+}
+.impact-hero h2{
+  margin:0 0 7px;
+  font-size:19px;
+  line-height:1.23;
+}
+.impact-hero p{
+  margin:0;
+  color:#526174;
+  font-size:13px;
+  line-height:1.48;
+}
+.impact-section-label{
+  font-size:16px;
+  font-weight:900;
+  margin:0 2px 9px;
+}
+.impact-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:15px;
+  margin-bottom:9px;
+  box-shadow:var(--shadow);
+}
+.impact-top{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+.impact-icon{
+  width:40px;height:40px;
+  border-radius:12px;
+  display:grid;place-items:center;
+  flex:none;
+  font-size:19px;font-weight:900;
+}
+.impact-icon.green{background:#eaf7ef;color:#139b5b}
+.impact-icon.blue{background:#edf4ff;color:#2c64b7}
+.impact-icon.purple{background:#f1edff;color:#7255b7}
+.impact-icon.orange{background:#fff2df;color:#d57a10}
+.impact-title{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:7px;
+  flex:1;
+}
+.impact-title h3{
+  margin:0!important;
+  font-size:15px!important;
+}
+.impact-tag{
+  flex:none;
+  background:#fff1e7;
+  color:#d86b28;
+  border-radius:999px;
+  padding:4px 7px;
+  font-size:9px;
+  font-weight:900;
+}
+.impact-card>p{
+  margin:10px 0 9px;
+  color:#4b5868;
+  font-size:12px;
+  line-height:1.5;
+}
+.impact-why{
+  border-top:1px solid var(--line);
+  padding-top:8px;
+  color:var(--muted);
+  font-size:10px;
+  line-height:1.4;
+}
+.impact-why strong{color:#344255}
+.impact-persistence{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  background:#fff9e9;
+  border:1px solid #f0dfae;
+  border-radius:15px;
+  padding:13px;
+  margin-top:12px;
+}
+.persistence-icon{
+  width:34px;height:34px;
+  border-radius:50%;
+  background:#ffefc9;
+  color:#bd7a09;
+  display:grid;place-items:center;
+  flex:none;font-weight:900;
+}
+.impact-persistence strong{
+  display:block;
+  color:#7d5713;
+  font-size:13px;
+  margin-bottom:3px;
+}
+.impact-persistence p{
+  margin:0;
+  color:#76684e;
+  font-size:11px;
+  line-height:1.45;
+}
+.impact-limit{
+  margin-top:9px;
+  background:#eef4ff;
+  border:1px solid #d5e1f4;
+  border-radius:15px;
+  padding:13px;
+}
+.impact-limit strong{
+  display:block;
+  color:#2453a6;
+  font-size:12px;
+  margin-bottom:4px;
+}
+.impact-limit p{
+  margin:0;
+  color:#536276;
+  font-size:10px;
+  line-height:1.5;
+}
+.impact-link{
+  border:0;background:transparent;
+  color:#16724e;
+  font-size:12px;
+  font-weight:900;
+  padding:12px 0 0;
+}
+body.dark .impact-hero{background:linear-gradient(135deg,#182b42,#152129);border-color:#304a68}
+body.dark .impact-hero h2{color:var(--ink)}
+body.dark .impact-hero p{color:#b7c5d3}
+body.dark .impact-icon.green{background:#17392d}
+body.dark .impact-icon.blue{background:#1c304b}
+body.dark .impact-icon.purple{background:#30294c}
+body.dark .impact-icon.orange{background:#493719}
+body.dark .impact-card>p{color:#b7c3c0}
+body.dark .impact-persistence{background:#3a301f;border-color:#66542f}
+body.dark .persistence-icon{background:#4b3b20;color:#f2bd61}
+body.dark .impact-persistence strong{color:#f0c879}
+body.dark .impact-persistence p{color:#c9bda5}
+body.dark .impact-limit{background:#1b2b42;border-color:#304968}
+body.dark .impact-limit p{color:#b8c6d8}
+body.dark .impact-limit strong{color:#9fc1f3}
+@media(max-width:360px){
+  .impact-title h3{font-size:14px!important}
+  .impact-tag{font-size:8px}
+  .impact-card{padding:13px}
+}
+</style>
 </head>
 <body>
 <div class="app">
@@ -386,13 +553,85 @@ body.dark .scenario-limit strong{color:#9fc1f3}
 </section>
 
 
-  <section class="screen" data-screen="2">
-    <div class="subhead"><h1>Impactos</h1><p>Se essas condições persistirem</p></div>
-    <article class="panel"><div class="impact"><div class="impact-icon">✤</div><div style="flex:1"><b>Mofo e fungos</b><span class="possible">POSSÍVEL</span><p>Umidade persistente e condensação podem favorecer condições para desenvolvimento em superfícies.</p></div></div></article>
-    <article class="panel"><div class="impact"><div class="impact-icon">☀</div><div style="flex:1"><b>Ácaros e alergênicos</b><span class="possible">POSSÍVEL</span><p>Ambientes quentes e úmidos podem favorecer condições associadas a ácaros e outros alergênicos.</p></div></div></article>
-    <article class="panel"><div class="impact"><div class="impact-icon">◇</div><div style="flex:1"><b>Bactérias e agentes biológicos</b><span class="possible">POSSÍVEL</span><p>Determinadas combinações de umidade, temperatura e disponibilidade de água podem favorecer proliferação.</p></div></div></article>
-    <article class="panel"><div class="impact"><div class="impact-icon">≈</div><div style="flex:1"><b>Desconforto térmico</b><span class="possible">POSSÍVEL</span><p>Temperatura e umidade elevadas podem aumentar a sensação de desconforto no ambiente.</p></div></div></article>
-  </section>
+  
+<section class="screen" data-screen="2">
+  <div class="subhead">
+    <h1>Impactos</h1>
+    <p>Se estas condições persistirem</p>
+  </div>
+
+  <article class="impact-hero">
+    <div class="impact-kicker">O QUE PODE ACONTECER?</div>
+    <h2>O ambiente pode permanecer desfavorável</h2>
+    <p>A persistência de calor, umidade elevada e condições de condensação pode aumentar a probabilidade de alguns impactos ambientais.</p>
+  </article>
+
+  <div class="impact-section-label">Possíveis impactos</div>
+
+  <article class="impact-card">
+    <div class="impact-top">
+      <div class="impact-icon green">✤</div>
+      <div class="impact-title">
+        <h3>Mofo e fungos</h3>
+        <span class="impact-tag">POSSÍVEL</span>
+      </div>
+    </div>
+    <p>Umidade persistente e condensação podem favorecer condições para desenvolvimento de fungos em superfícies e materiais.</p>
+    <div class="impact-why"><strong>Por quê?</strong> Disponibilidade de umidade + superfícies úmidas.</div>
+  </article>
+
+  <article class="impact-card">
+    <div class="impact-top">
+      <div class="impact-icon blue">✦</div>
+      <div class="impact-title">
+        <h3>Ácaros e alérgenos</h3>
+        <span class="impact-tag">POSSÍVEL</span>
+      </div>
+    </div>
+    <p>Ambientes quentes e úmidos podem favorecer condições associadas a ácaros e outros alérgenos ambientais.</p>
+    <div class="impact-why"><strong>Por quê?</strong> Temperatura e umidade elevadas por períodos prolongados.</div>
+  </article>
+
+  <article class="impact-card">
+    <div class="impact-top">
+      <div class="impact-icon purple">◇</div>
+      <div class="impact-title">
+        <h3>Agentes biológicos</h3>
+        <span class="impact-tag">POSSÍVEL</span>
+      </div>
+    </div>
+    <p>Determinadas combinações de umidade, temperatura e disponibilidade de água podem favorecer condições para proliferação de alguns agentes biológicos.</p>
+    <div class="impact-why"><strong>Por quê?</strong> O cenário ambiental pode oferecer condições favoráveis.</div>
+  </article>
+
+  <article class="impact-card">
+    <div class="impact-top">
+      <div class="impact-icon orange">≈</div>
+      <div class="impact-title">
+        <h3>Desconforto térmico</h3>
+        <span class="impact-tag">POSSÍVEL</span>
+      </div>
+    </div>
+    <p>Temperatura e umidade elevadas podem aumentar a sensação de desconforto para as pessoas no ambiente.</p>
+    <div class="impact-why"><strong>Por quê?</strong> O corpo encontra maior dificuldade para dissipar calor.</div>
+  </article>
+
+  <article class="impact-persistence">
+    <div class="persistence-icon">◷</div>
+    <div>
+      <strong>A persistência importa</strong>
+      <p>Uma leitura pontual não determina um impacto. O acompanhamento ao longo de horas ou dias ajuda a verificar se o cenário é persistente.</p>
+    </div>
+  </article>
+
+  <article class="impact-limit">
+    <strong>Importante</strong>
+    <p>O MIQAI identifica <b>condições ambientais compatíveis</b> com esses possíveis impactos. A plataforma não confirma a presença de mofo, fungos, bactérias, ácaros ou outros agentes apenas a partir dessas medições.</p>
+  </article>
+
+  <button class="impact-link" data-target="1">← Voltar ao cenário</button>
+</section>
+
 
   <section class="screen" data-screen="3">
     <div class="subhead"><h1>Ação</h1><p>O que fazer primeiro?</p></div>
