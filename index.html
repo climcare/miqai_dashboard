@@ -419,6 +419,212 @@ body.dark .impact-limit strong{color:#9fc1f3}
   .impact-card{padding:13px}
 }
 </style>
+
+<style id="miqai-rc18-action">
+.action-hero{
+  background:linear-gradient(135deg,#eaf7ef,#f8fcf9);
+  border:1px solid #c9e7d5;
+  border-radius:17px;
+  padding:18px 15px;
+  margin-bottom:10px;
+}
+.action-kicker{
+  color:#087344;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.7px;
+  margin-bottom:7px;
+}
+.action-hero h2{
+  margin:0 0 6px;
+  font-size:20px;
+  line-height:1.2;
+}
+.action-hero p{
+  margin:0;
+  color:#4d5e6c;
+  font-size:13px;
+  line-height:1.45;
+}
+.action-reason,.action-panel{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:15px;
+  margin-bottom:10px;
+  box-shadow:var(--shadow);
+}
+.action-section-title{
+  font-size:15px;
+  font-weight:900;
+  margin-bottom:11px;
+}
+.action-chain{
+  display:grid;
+  gap:6px;
+}
+.action-condition{
+  border:1px solid #e2e8ee;
+  border-radius:12px;
+  padding:10px 11px;
+  background:#fafcfd;
+}
+.action-condition span{
+  display:block;
+  color:var(--muted);
+  font-size:9px;
+  font-weight:900;
+  letter-spacing:.5px;
+  margin-bottom:5px;
+}
+.action-condition strong{
+  display:inline-block;
+  font-size:12px;
+  margin-right:7px;
+  line-height:1.4;
+}
+.action-condition.scenario{
+  background:#fff8ea;
+  border-color:#f0dcac;
+}
+.action-condition.scenario strong{color:#815b18}
+.action-condition.recommendation{
+  background:#edf9f2;
+  border-color:#c9e6d5;
+}
+.action-condition.recommendation strong{color:#087344}
+.action-arrow{
+  text-align:center;
+  color:#8a96a2;
+  font-size:15px;
+  line-height:1;
+}
+.action-explanation{
+  border-top:1px solid var(--line);
+  margin:12px 0 0;
+  padding-top:11px;
+  color:#4c5a6b;
+  font-size:12px;
+  line-height:1.5;
+}
+.action-step{
+  display:flex;
+  gap:10px;
+  padding:12px 0;
+  border-top:1px solid var(--line);
+}
+.action-step:first-of-type{border-top:0;padding-top:0}
+.action-num{
+  width:32px;height:32px;border-radius:50%;
+  background:#eef2f5;
+  color:#5d6977;
+  display:grid;place-items:center;
+  flex:none;font-size:12px;font-weight:900;
+}
+.action-step.primary .action-num{
+  background:#dff3e7;
+  color:#087344;
+}
+.action-step strong{display:block;font-size:13px;line-height:1.3}
+.action-step p{
+  margin:3px 0 0;
+  color:var(--muted);
+  font-size:11px;
+  line-height:1.45;
+}
+.expected-panel{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  background:#eef8ff;
+  border:1px solid #d3e5f4;
+  border-radius:15px;
+  padding:13px;
+  margin-bottom:9px;
+}
+.expected-icon{
+  width:34px;height:34px;border-radius:50%;
+  background:#dceefc;color:#2671a8;
+  display:grid;place-items:center;flex:none;
+  font-weight:900;
+}
+.expected-panel strong{
+  display:block;
+  color:#215d86;
+  font-size:13px;
+  margin-bottom:3px;
+}
+.expected-panel p{
+  margin:0;
+  color:#53687a;
+  font-size:11px;
+  line-height:1.45;
+}
+.action-context{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  background:#fff9e9;
+  border:1px solid #f0dfae;
+  border-radius:15px;
+  padding:13px;
+  margin-bottom:9px;
+}
+.context-icon{
+  width:34px;height:34px;border-radius:50%;
+  background:#ffefc9;color:#bd7a09;
+  display:grid;place-items:center;flex:none;
+}
+.action-context strong{
+  display:block;color:#7d5713;font-size:13px;margin-bottom:3px;
+}
+.action-context p{
+  margin:0;color:#76684e;font-size:11px;line-height:1.45;
+}
+.action-limit{
+  background:#f3f6f8;
+  border:1px solid #dfe6eb;
+  border-radius:15px;
+  padding:12px 13px;
+}
+.action-limit strong{
+  display:block;font-size:11px;color:#425264;margin-bottom:4px;
+}
+.action-limit p{
+  margin:0;color:#667585;font-size:10px;line-height:1.5;
+}
+.action-link{
+  border:0;background:transparent;color:#16724e;
+  font-size:12px;font-weight:900;padding:12px 0 0;
+}
+body.dark .action-hero{background:linear-gradient(135deg,#153126,#14231f);border-color:#285844}
+body.dark .action-hero p{color:#b8c6c2}
+body.dark .action-reason,body.dark .action-panel{background:var(--card)}
+body.dark .action-condition{background:#121d22;border-color:#2b3a40}
+body.dark .action-condition.scenario{background:#3b301d;border-color:#67532f}
+body.dark .action-condition.scenario strong{color:#f0c879}
+body.dark .action-condition.recommendation{background:#17392d;border-color:#2c654e}
+body.dark .action-condition.recommendation strong{color:#6fd0a5}
+body.dark .action-explanation{color:#b7c3c0}
+body.dark .action-num{background:#27343a;color:#b5c1be}
+body.dark .action-step.primary .action-num{background:#17392d;color:#6fd0a5}
+body.dark .action-step p{color:#a7b5b1}
+body.dark .expected-panel{background:#172d3b;border-color:#2d5065}
+body.dark .expected-icon{background:#203f53;color:#82c0e9}
+body.dark .expected-panel strong{color:#91c7e9}
+body.dark .expected-panel p{color:#b3c4d0}
+body.dark .action-context{background:#3a301f;border-color:#66542f}
+body.dark .context-icon{background:#4b3b20;color:#f2bd61}
+body.dark .action-context strong{color:#f0c879}
+body.dark .action-context p{color:#c9bda5}
+body.dark .action-limit{background:#172026;border-color:#2d3b41}
+body.dark .action-limit strong{color:#c0ccc9}
+body.dark .action-limit p{color:#a7b5b1}
+@media(max-width:360px){
+  .action-hero h2{font-size:19px}
+  .action-condition strong{font-size:11px}
+}
+</style>
 </head>
 <body>
 <div class="app">
@@ -633,15 +839,102 @@ body.dark .impact-limit strong{color:#9fc1f3}
 </section>
 
 
-  <section class="screen" data-screen="3">
-    <div class="subhead"><h1>Ação</h1><p>O que fazer primeiro?</p></div>
-    <article class="panel" style="background:#f1fbf4;border-color:#d2ebda"><div class="priority"><div class="num">1</div><div><b>Aumentar renovação do ar</b><p>Abrir janelas ou ajustar o sistema de ventilação para melhorar a troca de ar.</p></div></div></article>
-    <article class="panel"><div class="section-title" style="margin-top:0">Próximas ações</div>
-      <div class="priority"><div class="num">2</div><div><b>Reduzir temperatura interna</b><p>Sempre que possível, reduzir ganho de calor no ambiente.</p></div></div>
-      <div class="priority"><div class="num">3</div><div><b>Controlar fontes de umidade</b><p>Identificar e corrigir fontes que aumentam a umidade.</p></div></div>
-      <div class="priority"><div class="num">4</div><div><b>Acompanhar evolução</b><p>Reavaliar em algumas horas para verificar melhora do cenário.</p></div></div>
-    </article>
-  </section>
+  
+<section class="screen" data-screen="3">
+  <div class="subhead">
+    <h1>Ação</h1>
+    <p>O que fazer agora?</p>
+  </div>
+
+  <article class="action-hero">
+    <div class="action-kicker">RECOMENDAÇÃO PRINCIPAL</div>
+    <h2>Aumentar a renovação do ar</h2>
+    <p>Esta é a primeira ação sugerida para o cenário observado.</p>
+  </article>
+
+  <article class="action-reason">
+    <div class="action-section-title">Por que esta ação foi recomendada?</div>
+
+    <div class="action-chain">
+      <div class="action-condition">
+        <span>CONDIÇÕES OBSERVADAS</span>
+        <strong>CO₂ ↑</strong>
+        <strong>Temperatura ↑</strong>
+        <strong>Umidade ↑</strong>
+      </div>
+
+      <div class="action-arrow">↓</div>
+
+      <div class="action-condition scenario">
+        <span>CENÁRIO COMPATÍVEL</span>
+        <strong>Possível renovação insuficiente do ar</strong>
+      </div>
+
+      <div class="action-arrow">↓</div>
+
+      <div class="action-condition recommendation">
+        <span>AÇÃO</span>
+        <strong>Aumentar a renovação do ar</strong>
+      </div>
+    </div>
+
+    <p class="action-explanation">
+      O conjunto de evidências observado é compatível com uma possível renovação insuficiente do ar. Melhorar a troca de ar pode ajudar a reduzir o acúmulo de CO₂ e melhorar as condições ambientais.
+    </p>
+  </article>
+
+  <article class="action-panel">
+    <div class="action-section-title">O que fazer?</div>
+
+    <div class="action-step primary">
+      <div class="action-num">1</div>
+      <div>
+        <strong>Aumentar a renovação do ar</strong>
+        <p>Abra janelas, portas ou ajuste o sistema de ventilação, quando isso for adequado ao ambiente.</p>
+      </div>
+    </div>
+
+    <div class="action-step">
+      <div class="action-num">2</div>
+      <div>
+        <strong>Controlar fontes de umidade</strong>
+        <p>Verifique possíveis fontes de umidade e situações que possam contribuir para condensação.</p>
+      </div>
+    </div>
+
+    <div class="action-step">
+      <div class="action-num">3</div>
+      <div>
+        <strong>Reduzir o ganho de calor</strong>
+        <p>Quando possível, reduza fontes de calor que mantenham a temperatura elevada.</p>
+      </div>
+    </div>
+  </article>
+
+  <article class="expected-panel">
+    <div class="expected-icon">✓</div>
+    <div>
+      <strong>O que acompanhar depois?</strong>
+      <p>Observe se <b>CO₂, temperatura e umidade</b> começam a retornar para condições mais adequadas nas próximas horas.</p>
+    </div>
+  </article>
+
+  <article class="action-context">
+    <div class="context-icon">◷</div>
+    <div>
+      <strong>A persistência também importa</strong>
+      <p>Se o cenário continuar por horas ou dias, o acompanhamento contínuo ajuda a verificar se as condições estão melhorando ou permanecendo desfavoráveis.</p>
+    </div>
+  </article>
+
+  <article class="action-limit">
+    <strong>Importante</strong>
+    <p>As recomendações são orientações de mitigação ambiental baseadas nas condições observadas. A ação adequada depende das características e do uso do ambiente.</p>
+  </article>
+
+  <button class="action-link" data-target="2">← Voltar aos impactos</button>
+</section>
+
 
   <section class="screen" data-screen="4">
     <div class="subhead"><h1>Mais</h1><p>Informações e configurações</p></div>
